@@ -1,6 +1,9 @@
 <template>
   <div>
-      <h1 class="titulo">HP PAGE</h1>
+    <section class="logo-titulo">
+       <img src="./assets/logoHP.webp" alt="harry_potter_logo">
+    </section>
+     
       <ListaPersonajes />
   </div>
 </template>
@@ -15,4 +18,6 @@ import ListaPersonajes from './components/ListaPersonajes.vue'
 </script>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+  @import "./styles/personajes.scss";
+</style>

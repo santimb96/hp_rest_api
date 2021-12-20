@@ -3,11 +3,11 @@
     <div class="personajes">
         <div class="personaje_item" v-for="personaje in personajes" :key = "personaje.id">
             <img :src="personaje.imagen" :alt="personaje.nombre">
-            <h1>{{ personaje.personaje }}</h1>
-            <h2 v-if="personaje.casaDeHogwarts != 'ninguna' ">{{ personaje.casaDeHogwarts }}</h2>
-
-            <h2>{{ personaje.interpretado_por}}</h2>
-             
+            <div class="texto">
+                <h1>{{ personaje.personaje }}</h1>
+                <h2 v-if="personaje.casaDeHogwarts != 'ninguna' ">{{ personaje.casaDeHogwarts }}</h2>
+                <h2 v-if="personaje.interpretado_por != 'ninguno' ">{{ personaje.interpretado_por}}</h2>
+            </div>
         </div>
     </div>
 </section>

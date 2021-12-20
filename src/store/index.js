@@ -5,6 +5,7 @@ export default createStore({
     personajes: [],
     filtroPersonajes: []
   },
+
   mutations: {
 
     setPersonajes(state, payload){
@@ -20,6 +21,7 @@ export default createStore({
       async obtenerPersonajes({commit}){
 
         try{
+          
           const respuesta = await fetch('https://fedeperin-harry-potter-api.herokuapp.com/personajes');
           const datos = await respuesta.json();
 
