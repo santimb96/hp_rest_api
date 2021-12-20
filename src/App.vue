@@ -1,18 +1,14 @@
 <template>
-  <div>
-    <section class="logo-titulo">
-       <img src="./assets/logoHP.webp" alt="harry_potter_logo">
-    </section>
-     
-      <ListaPersonajes />
-  </div>
+  <Home />
 </template>
 <script>
-import ListaPersonajes from './components/ListaPersonajes.vue'
+import Home from './views/Home.vue'
+
+//import ListaPersonajes from './components/ListaPersonajes.vue'
   export default {
     name: 'App',
     components: {
-        ListaPersonajes
+        Home
     }
   }
 </script>
