@@ -1,19 +1,16 @@
 <template>
-  <Home />
+    <div id="nav">
+      <router-link :to="{name: 'Home'}">Home</router-link> |
+      <router-link :to="{name: 'Personajes'}">Personajes</router-link> |
+      <router-link :to="{name: 'About'}">About</router-link>
+  </div>
+    <router-view />
 </template>
 <script>
-import Home from './views/Home.vue'
 
-//import ListaPersonajes from './components/ListaPersonajes.vue'
   export default {
     name: 'App',
-    components: {
-        Home
-    }
   }
+  
 </script>
 
-
-<style lang="scss">
-  @import "./styles/personajes.scss";
-</style>

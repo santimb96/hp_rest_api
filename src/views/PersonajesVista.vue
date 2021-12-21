@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <ListaPersonajes/>
+  <div>
+    <ListaPersonajes />
   </div>
 </template>
 
