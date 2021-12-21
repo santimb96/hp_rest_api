@@ -13,12 +13,14 @@
 
 .personajes {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
-    gap: 5%;
+    grid-template-columns: repeat(4, 22%);
+    margin-top: 5vh;
+    justify-content: space-between;
 }
 
 .personaje_item {
     @extend %display_flex_card;
+    margin: 1.2vh;
     border-radius: 10px;
     background: #573722;
     flex-direction: column;
